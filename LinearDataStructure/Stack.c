@@ -91,7 +91,7 @@ int main() {
         print_stack(&s);
         break;
       case 6:
-        exit(0);
+        return -1;
         break;
       default:
         printf("Invalid choice.\n");
