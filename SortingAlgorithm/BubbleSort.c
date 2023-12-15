@@ -21,13 +21,13 @@ void bubbleSort(int arr[], int n) {
 }
 
 int main() {
-    int arr[] = {64, 34, 25, 12, 22, 11, 90};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int arr[] = {43, 29, 9, 89, 22, 11, 90};
+    int n = 7;
 
     bubbleSort(arr, n);
 
     printf("Sorted array is: ");
-    for (int i = 0; i<7; i++) {
+    for (int i = 0; i<n; i++) {
         printf("%d ", arr[i]);
     }
 
