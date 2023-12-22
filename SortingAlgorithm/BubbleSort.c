@@ -21,8 +21,8 @@ void bubbleSort(int arr[], int n) {
 }
 
 int main() {
-    int arr[] = {43, 29, 9, 89, 22, 11, 90};
-    int n = 7;
+    int arr[] = {73,49, 53, 12,48,10,84,70,20,16};
+    int n = 10;
 
     bubbleSort(arr, n);
 
@@ -30,6 +30,6 @@ int main() {
     for (int i = 0; i<n; i++) {
         printf("%d ", arr[i]);
     }
-
+    // Output: Sorted array is: 10 12 16 20 48 49 53 70 73 84
     return 0;
 }

@@ -1,10 +1,7 @@
 #include <stdio.h>
 
 void merge(int *array, int left, int mid, int right) {
-  int temp[right - left + 1];
-  int i = left;
-  int j = mid + 1;
-  int k = 0;
+  int temp[right - left + 1], i = left, j = mid + 1, k = 0;
 
   while (i <= mid && j <= right) {
     if (array[i] <= array[j]) {
@@ -46,8 +43,7 @@ int main() {
   for (int i = 0; i < size; i++) {
     printf("%d ", array[i]);
   }
-
+   
   printf("\n");
-
   return 0;
 }

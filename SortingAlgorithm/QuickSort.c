@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-int partition(int *array, int left, int right) {
+int partition(int array[], int left, int right) {
   int pivot = array[right];
   int i = left - 1;
 
@@ -21,7 +20,7 @@ int partition(int *array, int left, int right) {
   return pivotIndex;
 }
 
-void quickSort(int *array, int left, int right) {
+void quickSort(int array[], int left, int right) {
   if (left < right) {
     int pivotIndex = partition(array, left, right);
     quickSort(array, left, pivotIndex - 1);
@@ -30,16 +29,12 @@ void quickSort(int *array, int left, int right) {
 }
 
 int main() {
-  int array[] = {5, 3, 2, 1, 4};
-  int size = 5;
-
+  int array[] = {9,4,12,6,5,10,7};
+  int size = 7;
   quickSort(array, 0, size - 1);
-
   for (int i = 0; i < size; i++) {
     printf("%d ", array[i]);
   }
-
-  printf("\n");
-
+  printf("\n"); // Output : 4 5 6 7 9 10
   return 0;
 }
