@@ -25,7 +25,7 @@ public:
         hours = other.hours;
         minutes = other.minutes;
         seconds = other.seconds;
-        return *this;  // Return a reference to the current object
+        return *this;  
     }
 };
 
@@ -33,12 +33,12 @@ int main() {
     Time time1, time2;
 
     cout << "Enter time1 (HH:MM:SS): ";
-    cin >> time1;  // Using extraction operator
+    cin >> time1; 
 
     cout << "Enter time2 (HH:MM:SS): ";
     cin >> time2;
 
-    cout << "Time 1: " << time1 << endl;  // Using insertion operator
+    cout << "Time 1: " << time1 << endl;
     cout << "Time 2: " << time2 << endl;
 
     return 0;
