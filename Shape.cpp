@@ -10,7 +10,7 @@ protected:
 
 public:
     void setName(const string& shapeName) {
-        name = shapeName;
+        name =    shapeName;
     }
 
     string getName() const {
@@ -23,7 +23,7 @@ public:
 // Derived class Rectangle
 class Rectangle : public Shape {
 private:
-    double length, width;
+    double length,   width;
 
 public:
     Rectangle(double l, double w) : length(l), width(w) {
